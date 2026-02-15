@@ -1,0 +1,1 @@
+/home/luiz/.dotfiles/themes/gruvbox-material-dark/nvim/lua/colorscheme.lua

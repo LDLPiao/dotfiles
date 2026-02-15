@@ -1,0 +1,146 @@
+/* ==========================================================================
+   File: gruvbox-common.rasi
+   Desc: Shared rules between all gruvbox themes
+   Author: bardisty <b@bah.im>
+   Source: https://github.com/bardisty/gruvbox-rofi
+   Modified: Mon Feb 12 2018 06:06:47 PST -0800
+   ========================================================================== */
+@import "colorscheme.rasi"
+
+* {
+    border-radius:  10px;
+}
+
+window {
+    background-color: @background;
+    border:           2;
+    padding:          0;
+    width:            30%;
+    height:       38%;
+}
+
+mainbox {
+    border:  0;
+    padding: 0;
+}
+
+message {
+    border:       2px 0 0;
+    border-color: @separatorcolor;
+    padding:      1px;
+}
+
+textbox {
+    highlight:  @highlight;
+    text-color: @foreground;
+}
+
+listview {
+    padding:      8px 4px 8px 10px;
+    border-color: @separatorcolor;
+    spacing:      4px;
+    scrollbar:    true;
+}
+
+scrollbar {
+    handle-width: 2px;
+    handle-color: @scrollbar-handle;
+}
+
+element {
+    padding: 5px;
+    border: 0px;
+}
+
+
+element.normal.normal {
+    background-color: @normal-background;
+    text-color:       @normal-foreground;
+}
+
+element.normal.urgent {
+    background-color: @urgent-background;
+    text-color:       @urgent-foreground;
+}
+
+element.normal.active {
+    background-color: @active-background;
+    text-color:       @active-foreground;
+}
+
+element.selected.normal {
+    background-color: @selected-normal-background;
+    text-color:       @selected-normal-foreground;
+    border:           2px;
+    border-color:     @selected-normal-border-color;
+}
+
+element.selected.urgent {
+    background-color: @selected-urgent-background;
+    text-color:       @selected-urgent-foreground;
+    border:           2px;
+    border-color:     @selected-urgent-border-color;
+}
+
+element.selected.active {
+    background-color: @selected-active-background;
+    text-color:       @selected-active-foreground;
+    border:           2px;
+    border-color:     @selected-active-border-color;
+}
+
+element.alternate.normal {
+    background-color: @alternate-normal-background;
+    text-color:       @alternate-normal-foreground;
+}
+
+element.alternate.urgent {
+    background-color: @alternate-urgent-background;
+    text-color:       @alternate-urgent-foreground;
+}
+
+element.alternate.active {
+    background-color: @alternate-active-background;
+    text-color:       @alternate-active-foreground;
+}
+
+mode-switcher {
+    border:       2px 0 0;
+    border-color: @separatorcolor;
+}
+
+inputbar {
+    spacing:    0;
+    text-color: @normal-foreground;
+    padding:    8px;
+    children:   [ entry, case-indicator ];
+}
+
+case-indicator,
+button {
+    spacing:    0;
+    text-color: @normal-foreground;
+}
+
+entry {
+    padding: 4px 0px 8px 8px;
+    text-color: @normal-foreground;
+    placeholder: "Filter...";
+    placeholer-color: @placeholder-color;
+}
+
+button.selected {
+    background-color: @selected-normal-background;
+    text-color:       @selected-normal-foreground;
+}
+
+element-icon {
+    size: 1.0000em;
+}
+
+element-text, element-icon {
+    padding:            2px;
+    vertical-align:     0.5;
+    background-color: inherit;
+    text-color:       inherit;
+}

@@ -1,0 +1,69 @@
+/* ==========================================================================
+   Rofi color theme
+
+   Based on the Gruvbox color scheme for Vim by morhetz
+   https://github.com/morhetz/gruvbox
+
+   File: gruvbox-dark-hard.rasi
+   Desc: Gruvbox dark (hard contrast) color theme for Rofi
+   Author: bardisty <b@bah.im>
+   Source: https://github.com/bardisty/gruvbox-rofi
+   Modified: Mon Feb 12 2018 06:04:26 PST -0800
+   ========================================================================== */
+
+* {
+    /* Theme settings */
+    highlight: bold italic;
+
+    /* Gruvbox dark colors */
+    gruvbox-dark-bg-dim:       #141617;
+    gruvbox-dark-bg0:          #1d2021;
+    gruvbox-dark-bg1:          #282828;
+    gruvbox-dark-bg2:          #3c3836;
+    gruvbox-dark-bg3:          #32302f;
+    gruvbox-dark-bg4:          #504945;
+    gruvbox-dark-fg0:          #e2cca9;
+    gruvbox-dark-red-dark:     #db4740;
+    gruvbox-dark-red-light:    #f2594b;
+    gruvbox-dark-yellow:  		 #e9b143;
+    gruvbox-dark-orange:  		 #f28534;
+    gruvbox-dark-green:  		 #b0b846;
+    gruvbox-dark-aqua:  		 #8bba7f;
+    gruvbox-dark-blue:  		 #80aa9e;
+    gruvbox-dark-purple:  		 #d3849b;
+    gruvbox-dark-gray0:         #928374;
+    gruvbox-dark-gray1:         #189984;
+
+    /* Theme colors */
+    background:                  @gruvbox-dark-bg0;
+    background-color:            @background;
+    foreground:                  @gruvbox-dark-fg0;
+    border-color:                @gruvbox-dark-blue;
+    separatorcolor:              @border-color;
+    scrollbar-handle:            @border-color;
+    placeholder-color:           @gruvbox-dark-bg4;
+
+    normal-background:           @background;
+    normal-foreground:           @foreground;
+    alternate-normal-background: @gruvbox-dark-bg0;
+    alternate-normal-foreground: @foreground;
+    selected-normal-background:  @gruvbox-dark-bg1;
+    selected-normal-foreground:  @gruvbox-dark-fg0;
+    selected-normal-border-color:          @border-color;
+
+    active-background:                     @gruvbox-dark-yellow;
+    active-foreground:                     @background;
+    alternate-active-background:           @active-background;
+    alternate-active-foreground:           @active-foreground;
+    selected-active-background:            @gruvbox-dark-yellow;
+    selected-active-foreground:            @active-foreground;
+    selected-active-border-color:          @border-color;
+
+    urgent-background:           @gruvbox-dark-red-dark;
+    urgent-foreground:           @background;
+    alternate-urgent-background: @urgent-background;
+    alternate-urgent-foreground: @urgent-foreground;
+    selected-urgent-background:  @gruvbox-dark-red-light;
+    selected-urgent-foreground:  @urgent-foreground;
+    selected-urgent-border-color:          @border-color;
+}

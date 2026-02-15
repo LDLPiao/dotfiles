@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+RESIZE_TYPE="crop"
+TRANSITION_TYPE="random"
+export AWWW_TRANSITION_FPS="${AWWW_TRANSITION_FPS:-120}"
+export AWWW_TRANSITION_STEP="${AWWW_TRANSITION_STEP:-90}"
+
+find -L "$1" -type f \
+| while read -r img; do
+	echo "$(</dev/urandom tr -dc a-zA-Z0-9 | head -c 8):$img"
+done \
+| sort -n | cut -d':' -f2- \
+| while read -r img; do
+	awww img --resize="$RESIZE_TYPE" --transition-type="$TRANSITION_TYPE" "$img"
+done

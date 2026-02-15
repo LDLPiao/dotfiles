@@ -1,0 +1,183 @@
+@import "gruvbox-material-dark.css";
+
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: 'JetBrainsMono Nerd Font',monospace;
+    font-size: 18px;
+}
+
+window#waybar {
+    background-color: alpha(@bg_dim,0.85);
+    border-bottom: 3px solid @aqua;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+/*
+window#waybar.empty {
+    background-color: transparent;
+}
+window#waybar.solo {
+    background-color: #FFFFFF;
+}
+*/
+
+window#waybar.termite {
+    background-color: #3F3F3F;
+}
+
+window#waybar.chromium {
+    background-color: #000000;
+    border: none;
+}
+
+button {
+    /* Use box-shadow instead of border so the text isn't offset */
+    box-shadow: inset 0 -3px transparent;
+    /* Avoid rounded borders under each button name */
+    border: none;
+    border-radius: 0;
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+button:hover {
+    background: inherit;
+    border-width: 1;
+    border-color: @orange;
+    border-style: solid;
+}
+
+#custom-launcher-menu {
+    margin: 4 30 4 20;
+    color: @blue;
+}
+
+#workspaces button {
+    margin-bottom: 3;
+    padding: 0 5px 0 0;
+    background-color: transparent;
+    color: @fg0;
+}
+
+#workspaces button:hover {
+    color: @purple;
+}
+
+#workspaces button.focused, #workspaces button.active {
+    border-width: 3px;
+    padding: 0 15 0 10;
+    border-style: solid;
+    border-color: @orange;
+    color: @blue;
+}
+
+#workspaces button.urgent {
+    background-color: #eb4d4b;
+}
+
+#mpris {
+    color: @yellow;
+    margin-left: 40;
+}
+
+#clock {
+    background-color: alpha(@bg0, 0.95);
+    color: @fg0;
+    margin-bottom: 3px;
+    padding: 0 4;
+    border-color: alpha(@fg0, 0.5);
+    border-width: 2px;
+    border-style: solid;
+}
+
+#battery {
+    color: @yellow;
+    padding-right: 40;
+}
+
+#battery.charging, #battery.plugged {
+    color: @green;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: #000000;
+    }
+}
+
+/* Using steps() instead of linear as a timing function to limit cpu usage */
+#battery.critical:not(.charging) {
+    color: @red;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#power-profiles-daemon {
+    padding-right: 45px;
+}
+
+#power-profiles-daemon.performance {
+    color: @red;
+}
+
+#power-profiles-daemon.balanced {
+    color: @yellow;
+}
+
+#power-profiles-daemon.power-saver {
+    color: @green;
+}
+
+label:focus {
+    background-color: #000000;
+}
+
+#cpu {
+    padding-right: 5;
+    color: @purple;
+}
+
+#memory {
+    padding-right: 40;
+    color: @purple;
+}
+
+#network {
+    color: @blue;
+    padding-right: 25;
+}
+
+#network.disconnected {
+    color: @red;
+}
+
+#bluetooth {
+    padding-right: 25;
+    color: @yellow;
+}
+
+#bluetooth.connected {
+    color: @blue;
+}
+
+#bluetooth.off {
+    color: @bgDiffBlue;
+}
+
+#wireplumber {
+    padding-left: 30;
+    color: @yellow;
+}
+
+#wireplumber.muted {
+    color: @red;
+}
+
