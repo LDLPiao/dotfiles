@@ -21,5 +21,5 @@ path+=("$HOME/.local/bin/")
 
 export PATH
 
-alias ls='ls --color=auto'
+alias ls='eza --color=auto --icons=auto'
 alias grep='grep --color=auto'
