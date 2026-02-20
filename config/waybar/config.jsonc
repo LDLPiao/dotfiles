@@ -46,11 +46,11 @@
     "cpu": {
         "format": " {usage}%",
         "tooltip": false,
-        "on-click": "runapp -- kitty --class 'pop-up' -e btop"
+        "on-click": "uwsm-app -- kitty --class 'pop-up' -e btop"
     },
     "memory": {
         "format": " {}%",
-        "on-click": "runapp -- kitty --class 'pop-up' -e btop"
+        "on-click": "uwsm-app -- kitty --class 'pop-up' -e btop"
     },
     "backlight": {
         // "device": "acpi_video1",
@@ -106,7 +106,7 @@
         "tooltip-format": "{ifname} via {gwaddr}/{cidr} 󰩠",
         "format-linked": "{ifname} (No IP)",
         "format-disconnected": "Disconnected ⚠",
-        "on-click": "runapp -- kitty --class 'pop-up' -e impala"
+        "on-click": "uwsm-app -- kitty --class 'pop-up' -e impala"
     },
     "wireplumber": {
         // "scroll-step": 1, // %, can be a float
@@ -124,7 +124,7 @@
                 ""
             ]
         },
-        "on-click": "runapp -- kitty --class 'pop-up' -e wiremix"
+        "on-click": "uwsm-app -- kitty --class 'pop-up' -e wiremix"
     },
     "mpris": {
         "format": "{player_icon} {dynamic}",
@@ -146,6 +146,6 @@
         "format-off": "󰂲",
         "format-on": "",
         "format-connected": "󰂱 {num_connections}",
-        "on-click": "runapp -- kitty --class 'pop-up' -e bluetui"
+        "on-click": "uwsm-app -- kitty --class 'pop-up' -e bluetui"
     }
 }

@@ -1,1 +1,1 @@
-/home/luiz/.dotfiles/themes/catppuccin-mocha/nvim/lua/colorscheme.lua
+/home/luiz/.dotfiles/themes/gruvbox-material-dark/nvim/lua/colorscheme.lua

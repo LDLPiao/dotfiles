@@ -11,11 +11,11 @@ texts[theme]=" Themes"
 texts[power]="󰐦 Power menu"
 
 scripts[screenshot]="$HOME/.local/bin/screenshot"
-scripts[pacman]="runapp -- kitty --class 'pop-up' -e $HOME/.local/bin/pkg-install"
-scripts[aur]="runapp -- kitty --class 'pop-up' -e $HOME/.local/bin/pkg-aur-install"
-scripts[remove]="runapp -- kitty --class 'pop-up' -e $HOME/.local/bin/pkg-remove"
+scripts[pacman]="uwsm-app -- kitty --class 'pop-up' -e $HOME/.local/bin/pkg-install"
+scripts[aur]="uwsm-app -- kitty --class 'pop-up' -e $HOME/.local/bin/pkg-aur-install"
+scripts[remove]="uwsm-app -- kitty --class 'pop-up' -e $HOME/.local/bin/pkg-remove"
 scripts[theme]="$HOME/.local/bin/theme-pick"
-scripts[power]="runapp -- rofi -show power-menu -modi power-menu:$HOME/.local/bin/rofi-power-menu"
+scripts[power]="uwsm-app -- rofi -show power-menu -modi power-menu:$HOME/.local/bin/rofi-power-menu"
 
 # Criar menu com textos amigáveis
 menu=""
