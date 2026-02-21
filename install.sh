@@ -7,8 +7,8 @@ set -euo pipefail
 ### ==============================
 
 DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-PACMAN_FILE="$DOTFILES_DIR/pacman"
-AUR_FILE="$DOTFILES_DIR/aur"
+PACMAN_FILE="$DOTFILES_DIR/pacman.txt"
+AUR_FILE="$DOTFILES_DIR/aur.txt"
 
 CONFIG_DIR="$DOTFILES_DIR/config"
 HOME_DIR="$DOTFILES_DIR/home"

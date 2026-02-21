@@ -7,7 +7,7 @@ THEMES_DIR="$DOTFILES/themes"
 CONFIG_DIR="$DOTFILES/config"
 
 # Escolher tema
-theme=$(ls "$THEMES_DIR" | rofi -dmenu -p "Escolha um tema:")
+theme=$(ls "$THEMES_DIR" | rofi -dmenu)
 
 [ -z "$theme" ] && exit 0
 
@@ -45,12 +45,7 @@ ln -sf "$THEME_PATH/wallpapers" "$DOTFILES"
 # Reload Hyprland
 hyprctl reload
 
-WALL_TOGGLE="$HOME/.local/bin/toggle-wallpaper"
+WALL_TOGGLE="$HOME/.local/bin/toggle-wallpaper.sh"
 [ -x "$WALL_TOGGLE" ] && "$WALL_TOGGLE" next
-
-# Reload waybar
-killall dunst waybar 2>/dev/null || true
-uwsm-app -- dunst &
-uwsm-app -- waybar &
 
 notify-send "Tema $theme aplicado."

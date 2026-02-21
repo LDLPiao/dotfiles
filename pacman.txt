@@ -1,0 +1,8 @@
+neovim
+starship
+snap-pac
+kitty
+unzip
+fzf
+eza
+zsh

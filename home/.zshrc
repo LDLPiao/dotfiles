@@ -17,7 +17,8 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-path+=("$HOME/.local/bin/")
+path+=("$HOME/.local/bin")
+path+=("$HOME/.local/share/nvim/mason/bin")
 
 export PATH
 
