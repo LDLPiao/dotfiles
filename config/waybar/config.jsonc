@@ -106,7 +106,7 @@
         "tooltip-format": "{ifname} via {gwaddr}/{cidr} 󰩠",
         "format-linked": "{ifname} (No IP)",
         "format-disconnected": "Disconnected ⚠",
-        "on-click": "uwsm-app -- kitty --class 'pop-up' -e impala"
+        "on-click": "uwsm-app -- networkmanager_dmenu"
     },
     "wireplumber": {
         // "scroll-step": 1, // %, can be a float
