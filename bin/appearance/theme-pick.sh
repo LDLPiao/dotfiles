@@ -41,6 +41,7 @@ done
 
 ln -sf "$THEME_PATH/wallpapers" "$DOTFILES"
 
+killall waybar && uwsm-app waybar &
 
 # Reload Hyprland
 hyprctl reload

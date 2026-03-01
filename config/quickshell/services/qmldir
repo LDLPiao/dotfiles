@@ -1,0 +1,4 @@
+module Services
+
+singleton Time 1.0 Time.qml
+singleton SystemMonitor 1.0 SystemMonitor.qml

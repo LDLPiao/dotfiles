@@ -7,8 +7,8 @@
 vim.o.number = true
 vim.o.relativenumber = true
 
-vim.o.tabstop = 3
-vim.o.shiftwidth = 3
+vim.o.tabstop = 4
+vim.o.shiftwidth = 4
 -- You can also add relative line numbers, to help with jumping.
 --  Experiment for yourself to see if you like it!
 -- vim.o.relativenumber = true
@@ -59,7 +59,7 @@ vim.o.splitbelow = true
 --   See `:help lua-options`
 --   and `:help lua-guide-options`
 vim.o.list = true
-vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+vim.opt.listchars = { tab = '· ', trail = '.', nbsp = '␣' }
 
 -- Preview substitutions live, as you type!
 vim.o.inccommand = 'split'
