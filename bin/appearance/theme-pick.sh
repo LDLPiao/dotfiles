@@ -41,11 +41,13 @@ done
 
 ln -sf "$THEME_PATH/wallpapers" "$DOTFILES"
 
+WALL_TOGGLE="$HOME/.local/bin/toggle-wallpaper.sh"
+"$WALL_TOGGLE" next
+
+# Reload waybar
+killall waybar && uwsm-app -- waybar
 
 # Reload Hyprland
 hyprctl reload
-
-WALL_TOGGLE="$HOME/.local/bin/toggle-wallpaper.sh"
-[ -x "$WALL_TOGGLE" ] && "$WALL_TOGGLE" next
 
 notify-send "Tema $theme aplicado."

@@ -9,6 +9,7 @@
     "modules-left": [
         "custom/launcher-menu",
         "hyprland/workspaces",
+        "tray",
         "mpris",
         "wireplumber"
     ],
@@ -19,6 +20,7 @@
         "cpu",
         "memory",
         "power-profiles-daemon",
+        "backlight",
         "battery",
         "network",
         "bluetooth"
@@ -54,7 +56,7 @@
     },
     "backlight": {
         // "device": "acpi_video1",
-        "format": "{percent}% {icon}",
+        "format": "{icon}",
         "format-icons": [
             "",
             "",
@@ -106,7 +108,7 @@
         "tooltip-format": "{ifname} via {gwaddr}/{cidr} 󰩠",
         "format-linked": "{ifname} (No IP)",
         "format-disconnected": "Disconnected ⚠",
-        "on-click": "uwsm-app -- networkmanager_dmenu"
+        "on-click": "uwsm-app -- kitty --class 'pop-up' -e impala"
     },
     "wireplumber": {
         // "scroll-step": 1, // %, can be a float

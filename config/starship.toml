@@ -253,7 +253,7 @@ format = " [buf](italic) [$symbol $version $buf_version]($style)"
 
 [c]
 symbol = " "
-format = " [$symbol($version(-$name))]($style)"
+format = " [$symbol($version(-$name)) ]($style)"
 
 [cpp]
 symbol = " "

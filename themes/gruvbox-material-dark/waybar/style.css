@@ -8,7 +8,6 @@
 
 window#waybar {
     background-color: alpha(@bg_dim,0.85);
-    border-bottom: 3px solid @aqua;
     transition-property: background-color;
     transition-duration: .5s;
 }
@@ -79,9 +78,13 @@ button:hover {
     background-color: #eb4d4b;
 }
 
+#tray {
+    margin-left: 20;
+}
+
 #mpris {
     color: @yellow;
-    margin-left: 40;
+    margin-left: 20;
 }
 
 #clock {
@@ -121,7 +124,7 @@ button:hover {
 }
 
 #power-profiles-daemon {
-    padding-right: 45px;
+    padding-right: 25px;
 }
 
 #power-profiles-daemon.performance {
@@ -138,6 +141,11 @@ button:hover {
 
 label:focus {
     background-color: #000000;
+}
+
+#backlight {
+    padding-right: 40;
+    color: @yellow
 }
 
 #cpu {

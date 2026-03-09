@@ -67,11 +67,13 @@ button {
 #workspaces {
     margin: 0px 0px 0px 0px;
     padding: 0px 10px 0px 10px;
-    border-radius: 0 0 10 0;
+    border-radius: 0 0 0 0;
     background-color: @surface0;
     border-left-width: 2px;
+    border-right-width: 2px;
     border-bottom-width: 3px;
     border-left-color: alpha(@base,0.4);
+    border-right-color: alpha(@base,0.4);
     border-bottom-color: @sapphire;
     border-style: solid;
 }
@@ -94,18 +96,33 @@ button {
 #workspaces button.urgent {}
 
 #mpris {
-  margin-left: 10;
   font-size: 13px;
   padding: 0 8px 0 10px;
-  border-radius: 0 0 0px 10;
+  border-radius: 0 0 0px 0;
   background-color: @surface0;
     border-right-width: 2px;
+    border-left-width: 2px;
     border-bottom-width: 3px;
     border-right-color: alpha(@base,0.4);
+    border-left-color: alpha(@base,0.4);
     border-bottom-color: @sapphire;
     border-style: solid;
 
     color: @teal;
+}
+
+#tray {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 10px 0px 10px;
+    border-radius: 0 0 0 0;
+    background-color: @surface0;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 3px;
+    border-left-color: alpha(@base,0.4);
+    border-right-color: alpha(@base,0.4);
+    border-bottom-color: @sapphire;
+    border-style: solid;
 }
 
 #clock {
@@ -156,7 +173,6 @@ button {
 }
 
 #power-profiles-daemon {
-    padding-right: 15px;
     margin: 0px 0px 0px 0px;
     padding: 0px 15px 0px 10px;
     background-color: @surface0;
@@ -181,6 +197,20 @@ button {
     color: @green;
 }
 
+#backlight {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 10px 0px 10px;
+    background-color: @surface0;
+    border-right-width: 2px;
+    border-left-width: 2px;
+    border-bottom-width: 3px;
+    border-right-color: alpha(@base,0.4);
+    border-left-color: alpha(@base,0.4);
+    border-bottom-color: @sapphire;
+    border-style: solid;
+    color: @yellow
+}
+
 #cpu {
     color: @mauve;
     margin: 0px 0px 0px 0px;
@@ -203,8 +233,6 @@ button {
     border-bottom-color: @sapphire;
     border-style: solid;
 }
-
-#backlight {}
 
 #network {
     color: @sky;
